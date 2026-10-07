@@ -1,0 +1,216 @@
+/* Estilos principais do site Minha Trilha de Aprendizagem */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #2563eb;
+    --cor-secundaria: #1e40af;
+    --cor-fundo: #f8fafc;
+    --cor-texto: #1e293b;
+    --cor-card: #ffffff;
+    --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header e Navegação */
+header {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--sombra);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção Aprendizado */
+.aprendizado {
+    padding: 4rem 0;
+}
+
+.aprendizado h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor-secundaria);
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--cor-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.card code {
+    background: #e0e7ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Seção Comandos Git */
+.comandos {
+    background: #1e293b;
+    color: white;
+    padding: 4rem 0;
+}
+
+.comandos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.lista-comandos {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.lista-comandos li {
+    background: rgba(255, 255, 0.1);
+    margin-bottom: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-primaria);
+    transition: background 0.3s;
+}
+
+.lista-comandos li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.lista-comandos code {
+    background: #3b82f6;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+nav a.ativo {
+    text-decoration: underline;
+    font-weight: 700;
+}
