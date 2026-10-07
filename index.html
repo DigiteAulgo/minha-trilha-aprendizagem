@@ -21,6 +21,54 @@
         </div>
     </header>
 
-    
+    <section id="aprendi" class="aprendizado">
+    <div class="container">
+        <h2>O que aprendi</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>1. O que é versionamento?</h3>
+                <p>Versionamento é o processo de controlar e registrar as diferentes versões de arquivos ou de um projeto ao longo do tempo. Cada alteração importante cria um novo estado (versão) do projeto.</p>
+            </article>
+            <article class="card">
+                <h3>2. Git × GitHub</h3>
+                <p>Git é o sistema de controle de versão que funciona no computador. GitHub é a plataforma online que hospeda repositórios Git e facilita a colaboração (Pull Requests, Issues etc.).</p>
+            </article>
+            <article class="card">
+                <h3>3. Prepare o ambiente</h3>
+                <p>Instale o Git, configure nome e e-mail com <code>git config --global</code> e verifique com <code>git --version</code> e <code>git config --list</code>.</p>
+            </article>
+            <article class="card">
+                <h3>4. Crie o primeiro repositório</h3>
+                <p>Use <code>mkdir</code>, entre na pasta e rode <code>git init</code>. Depois confira o estado com <code>git status</code>.</p>
+            </article>
+            <article class="card">
+                <h3>5. Comandos essenciais</h3>
+                <p>Fluxo diário: editar → <code>git status</code> → <code>git add</code> → <code>git commit</code> → <code>git log</code>. Também use <code>git diff</code> para ver diferenças.</p>
+            </article>
+            <article class="card">
+                <h3>6. Commits claros</h3>
+                <p>Faça commits pequenos e com mensagens objetivas. Evite mensagens genéricas como “alterações”. Prefira: “Adiciona formulário de contato”.</p>
+            </article>
+            <article class="card">
+                <h3>7. Branches e merge</h3>
+                <p>Branch é uma linha de desenvolvimento isolada. Crie com <code>git switch -c nome</code>, volte com <code>git switch main</code> e integre com <code>git merge</code>.</p>
+            </article>
+            <article class="card">
+                <h3>8. Conecte ao GitHub</h3>
+                <p>Crie o repositório no GitHub, adicione o remoto com <code>git remote add origin URL</code>, renomeie a branch para <code>main</code> e envie com <code>git push -u origin main</code>.</p>
+            </article>
+            <article class="card">
+                <h3>9. Clonar e colaborar</h3>
+                <p>Use <code>git clone</code> para copiar um repositório existente. Fluxo de colaboração: <code>git pull</code> → editar → commit → <code>git push</code>.</p>
+            </article>
+            <article class="card">
+                <h3>10. .gitignore e boas práticas</h3>
+                <p>Ignore arquivos desnecessários (<code>node_modules/</code>, <code>.env</code>, <code>*.log</code>). Faça commits pequenos, use branches, atualize antes de trabalhar e nunca versionar senhas ou tokens.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+
 </body>
 </html>
